@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Tienda - E-commerce</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header / Navegación -->
+    <header class="bg-white shadow-md p-4">
+        <nav class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-gray-800">Mi Tienda</h1>
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="nav-link">Inicio</a></li>
+                <li><a href="#products" class="nav-link">Productos</a></li>
+                <li><a href="#about" class="nav-link">Nosotros</a></li>
+                <li><a href="#cart" class="nav-link">Carrito</a></li>
+                <li><a href="#contact" class="nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="container mx-auto my-8">
+
+        <!-- Página Inicio -->
+        <section id="home" class="page">
+            <div class="card text-center">
+                <h2 class="text-4xl font-extrabold mb-4">Bienvenido a Mi Tienda</h2>
+                <p class="text-xl text-gray-600 mb-8">Encuentra los productos que más te gustan.</p>
+                <a href="#products" class="btn btn-primary">Explorar productos</a>
+            </div>
+
+            <div class="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card text-center">
+                    <img src="https://paylessec.vtexassets.com/arquivos/ids/464527/199879_1.jpg" alt="Zapatos Deportivos" class="rounded-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Zapatos Deportivos</h3>
+                    <p class="text-gray-600 mb-4">$89.99</p>
+                    <a href="#cart" class="btn btn-secondary">Ver detalles</a>
+                </div>
+                <div class="card text-center">
+                    <img src="https://images.unsplash.com/photo-1582133464879-8b8a3e742e97?q=80&w=2070&auto=format&fit=crop" alt="Gorras Urbanas" class="rounded-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Gorras Urbanas</h3>
+                    <p class="text-gray-600 mb-4">$29.50</p>
+                    <a href="#cart" class="btn btn-secondary">Ver detalles</a>
+                </div>
+                <div class="card text-center">
+                    <img src="https://images.unsplash.com/photo-1579298245158-b8681b0d2d31?q=80&w=1932&auto=format&fit=crop" alt="Mochila Elegante" class="rounded-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Mochila Elegante</h3>
+                    <p class="text-gray-600 mb-4">$49.99</p>
+                    <a href="#cart" class="btn btn-secondary">Ver detalles</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Página Productos -->
+        <section id="products" class="page mt-12">
+            <h2 class="text-3xl font-bold text-center mb-8">Nuestros Productos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card text-center">
+                    <img src="https://paylessec.vtexassets.com/arquivos/ids/464527/199879_1.jpg" alt="Zapatos Deportivos" class="rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Zapatos Deportivos</h3>
+                    <p class="text-gray-600 text-lg font-bold mb-4">$89.99</p>
+                    <a href="#cart" class="btn btn-primary">Añadir al Carrito</a>
+                </div>
+                <div class="card text-center">
+                    <img src="https://images.unsplash.com/photo-1582133464879-8b8a3e742e97?q=80&w=2070&auto=format&fit=crop" alt="Gorras Urbanas" class="rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Gorras Urbanas</h3>
+                    <p class="text-gray-600 text-lg font-bold mb-4">$29.50</p>
+                    <a href="#cart" class="btn btn-primary">Añadir al Carrito</a>
+                </div>
+                <div class="card text-center">
+                    <img src="https://images.unsplash.com/photo-1579298245158-b8681b0d2d31?q=80&w=1932&auto=format&fit=crop" alt="Mochila Elegante" class="rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Mochila Elegante</h3>
+                    <p class="text-gray-600 text-lg font-bold mb-4">$49.99</p>
+                    <a href="#cart" class="btn btn-primary">Añadir al Carrito</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Página Nosotros -->
+        <section id="about" class="page mt-12">
+            <div class="card">
+                <h2 class="text-3xl font-bold mb-4 text-center">Acerca de Nosotros</h2>
+                <p class="text-gray-700 mb-4">Somos una empresa dedicada a ofrecer productos de alta calidad para nuestros clientes.</p>
+                <p class="text-gray-700 mb-4">Fundada en 2023, trabajamos para brindar la mejor experiencia de compra y satisfacción en cada pedido.</p>
+            </div>
+        </section>
+
+        <!-- Página Carrito -->
+        <section id="cart" class="page mt-12">
+            <div class="card text-center">
+                <h2 class="text-3xl font-bold mb-4">Tu Carrito</h2>
+                <p class="text-gray-500">Aquí verás los productos que añadas (simulación sin JS).</p>
+            </div>
+        </section>
+
+        <!-- Página Contacto -->
+        <section id="contact" class="page mt-12">
+            <div class="card">
+                <h2 class="text-3xl font-bold mb-4 text-center">Contáctanos</h2>
+                <form class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Nombre:</label>
+                        <input type="text" class="input-field">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Correo Electrónico:</label>
+                        <input type="email" class="input-field">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Mensaje:</label>
+                        <textarea class="input-field" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-full">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white shadow-md p-4 mt-8">
+        <div class="container mx-auto text-center text-gray-600">
+            &copy; 2024 Mi Tienda. Todos los derechos reservados.
+        </div>
+    </footer>
+
+</body>
+</html>
